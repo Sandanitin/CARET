@@ -76,23 +76,23 @@ export const stats = [
 
 export const processSteps = [
     {
-        number: "01",
-        title: "Discovery & Strategy",
-        description: "We analyze your business goals, target audience, and competition to develop a customized strategy."
+        number: "1",
+        title: "Consultation",
+        description: "We start with a detailed consultation to understand your needs, space, and style preferences."
     },
     {
-        number: "02",
-        title: "Planning & Design",
-        description: "Creating detailed plans, wireframes, and designs that align with your brand and objectives."
+        number: "2",
+        title: "Design",
+        description: "Our designers create a custom layout that maximizes your space and meets your storage requirements."
     },
     {
-        number: "03",
-        title: "Development & Implementation",
-        description: "Building and implementing solutions with regular updates and transparent communication."
+        number: "3",
+        title: "Fabrication",
+        description: "Using CNC technology and premium materials, we craft your custom closet components with precision."
     },
     {
-        number: "04",
-        title: "Launch & Optimization",
-        description: "Deploying your solution and continuously optimizing for performance and growth."
+        number: "4",
+        title: "Installation",
+        description: "Our professional team installs your new closet system efficiently and with minimal disruption."
     }
 ];
