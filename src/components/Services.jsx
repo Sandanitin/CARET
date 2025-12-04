@@ -4,16 +4,6 @@ import { services } from '../constants';
 import { ArrowRight } from 'lucide-react';
 
 const Services = () => {
-    const getImage = (key) => {
-        switch (key) {
-            case 'service_web_dev': return '/images/web-dev.png';
-            case 'service_marketing': return '/images/marketing.png';
-            case 'service_photography': return '/images/photography.png';
-            case 'service_logistics': return '/images/logistics.png';
-            default: return '/images/web-dev.png';
-        }
-    };
-
     return (
         <section id="services" className="py-20 bg-slate-900 relative">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -49,7 +39,7 @@ const Services = () => {
                         >
                             <div className="h-48 overflow-hidden">
                                 <img
-                                    src={getImage(service.image)}
+                                    src={service.image}
                                     alt={service.title}
                                     className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
                                 />

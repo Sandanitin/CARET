@@ -7,7 +7,7 @@ export const services = [
         price: "$2,500+",
         icon: Code,
         features: ["Custom WordPress/WooCommerce", "Shopify & Magento Setup", "Mobile-First Design", "Payment Integration"],
-        image: "service-ecommerce.jpg"
+        image: "/images/service-ecommerce-new.png"
     },
     {
         title: "Marketplace Management",
@@ -15,7 +15,7 @@ export const services = [
         price: "$800+ /month",
         icon: ShoppingCart,
         features: ["Amazon Seller/Vendor Central", "Account Optimization", "Product Listing & SEO", "PPC Management"],
-        image: "service-marketplace.jpg"
+        image: "/images/service-marketplace-new.png"
     },
     {
         title: "Product Photography & Editing",
@@ -23,7 +23,7 @@ export const services = [
         price: "$50+ /product",
         icon: Camera,
         features: ["Studio & Lifestyle Shots", "360° Product Views", "Professional Editing", "Background Removal"],
-        image: "service-photography.jpg"
+        image: "/images/service-photography-new.png"
     },
     {
         title: "Digital Marketing",
@@ -31,7 +31,7 @@ export const services = [
         price: "$1,200+ /month",
         icon: TrendingUp,
         features: ["SEO & Local Search", "Google Ads & PPC", "Meta Ads", "Social Media Marketing"],
-        image: "service-marketing.jpg"
+        image: "/images/service-digital-marketing-new.png"
     },
     {
         title: "Fulfillment & Logistics",
@@ -39,7 +39,7 @@ export const services = [
         price: "$500+ /month",
         icon: Truck,
         features: ["Order Processing", "Warehousing", "Shipping Integration", "Returns Management"],
-        image: "service-fulfillment.jpg"
+        image: "/images/service-logistics-new.png"
     },
     {
         title: "Inventory & Warehousing",
@@ -47,7 +47,7 @@ export const services = [
         price: "$300+ /month",
         icon: Box,
         features: ["Secure Storage", "Real-time Tracking", "Multi-channel Fulfillment", "Stock Alerts"],
-        image: "service-inventory.jpg"
+        image: "/images/service-inventory-new.png"
     },
     {
         title: "Business Consulting",
@@ -55,7 +55,7 @@ export const services = [
         price: "$150 /hour",
         icon: Users,
         features: ["Business Formation", "NAICS Code Guidance", "Regulatory Compliance", "Strategy Development"],
-        image: "service-consulting.jpg"
+        image: "/images/service-consulting-new.png"
     },
     {
         title: "Automation Services",
@@ -63,7 +63,7 @@ export const services = [
         price: "$1,000+ /project",
         icon: Zap,
         features: ["Workflow Automation", "Custom API Integrations", "Data Sync", "Automated Reporting"],
-        image: "service-automation.jpg"
+        image: "/images/service-automation-new.png"
     }
 ];
 
