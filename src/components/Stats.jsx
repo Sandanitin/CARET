@@ -4,9 +4,9 @@ import { stats } from '../constants';
 
 const Stats = () => {
     return (
-        <section className="py-20 bg-slate-800 relative overflow-hidden">
+        <section className="py-20 bg-gray-100 relative overflow-hidden">
             {/* Background Pattern */}
-            <div className="absolute inset-0 opacity-10">
+            <div className="absolute inset-0 opacity-5">
                 <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] mix-blend-overlay" />
             </div>
 
@@ -21,10 +21,10 @@ const Stats = () => {
                             transition={{ delay: index * 0.1, type: "spring", stiffness: 100 }}
                             className="p-6"
                         >
-                            <h3 className="text-4xl md:text-5xl font-bold text-white mb-2 font-heading">
+                            <h3 className="text-4xl md:text-5xl font-bold text-gray-900 mb-2 font-heading">
                                 {stat.value}
                             </h3>
-                            <p className="text-primary-400 font-medium uppercase tracking-wider text-sm">
+                            <p className="text-red-600 font-medium uppercase tracking-wider text-sm">
                                 {stat.label}
                             </p>
                         </motion.div>

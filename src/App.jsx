@@ -10,7 +10,7 @@ import ContactPage from './pages/ContactPage';
 
 function App() {
   return (
-    <div className="bg-slate-900 min-h-screen text-white">
+    <div className="bg-white min-h-screen text-gray-900">
       <ScrollToTop />
       <Navbar />
       <Routes>

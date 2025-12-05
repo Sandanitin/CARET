@@ -18,31 +18,31 @@ const About = () => {
     ];
 
     return (
-        <div className="bg-slate-900 pt-20">
+        <div className="bg-white pt-20">
             {/* Hero Section */}
             <section className="py-20 relative overflow-hidden">
                 <div className="absolute inset-0">
                     <img
                         src="/images/marketing.png"
                         alt="About Background"
-                        className="absolute inset-0 w-full h-full object-cover opacity-20"
+                        className="absolute inset-0 w-full h-full object-cover opacity-10"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-b from-slate-900 via-slate-900/95 to-slate-900" />
+                    <div className="absolute inset-0 bg-gradient-to-b from-white via-white/95 to-white" />
                 </div>
 
                 <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                     <motion.h1
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
-                        className="text-4xl md:text-6xl font-bold font-heading text-white mb-6"
+                        className="text-4xl md:text-6xl font-bold font-heading text-gray-900 mb-6"
                     >
-                        About <span className="text-gradient">DigitalSolutionsHub</span>
+                        About <span className="text-gradient">Caret Enterprises</span>
                     </motion.h1>
                     <motion.p
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.2 }}
-                        className="text-xl text-gray-400 max-w-3xl mx-auto"
+                        className="text-xl text-gray-600 max-w-3xl mx-auto"
                     >
                         Empowering businesses with comprehensive digital solutions since 2018
                     </motion.p>
@@ -50,7 +50,7 @@ const About = () => {
             </section>
 
             {/* Our Story */}
-            <section className="py-20 bg-slate-800">
+            <section className="py-20 bg-gray-50">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                         <motion.div
@@ -58,16 +58,16 @@ const About = () => {
                             whileInView={{ opacity: 1, x: 0 }}
                             viewport={{ once: true }}
                         >
-                            <h2 className="text-3xl md:text-4xl font-bold font-heading text-white mb-6">
+                            <h2 className="text-3xl md:text-4xl font-bold font-heading text-gray-900 mb-6">
                                 Our Story
                             </h2>
-                            <p className="text-gray-400 mb-4 leading-relaxed">
-                                Founded in 2018, DigitalSolutionsHub emerged from a simple vision: to help businesses thrive in the digital age. We recognized that many companies struggled with fragmented digital services, jumping between multiple providers for their website, marketing, logistics, and automation needs.
+                            <p className="text-gray-600 mb-4 leading-relaxed">
+                                Founded in 2018, Caret Enterprises emerged from a simple vision: to help businesses thrive in the digital age. We recognized that many companies struggled with fragmented digital services, jumping between multiple providers for their website, marketing, logistics, and automation needs.
                             </p>
-                            <p className="text-gray-400 mb-4 leading-relaxed">
+                            <p className="text-gray-600 mb-4 leading-relaxed">
                                 We set out to change that by creating a comprehensive, integrated platform where businesses could access all their digital needs under one roof. Today, we've helped over 250 businesses transform their operations and achieve remarkable growth.
                             </p>
-                            <p className="text-gray-400 leading-relaxed">
+                            <p className="text-gray-600 leading-relaxed">
                                 Our team of experts brings decades of combined experience in e-commerce, digital marketing, logistics, and technology. We're passionate about what we do, and it shows in the results we deliver for our clients.
                             </p>
                         </motion.div>
@@ -88,14 +88,14 @@ const About = () => {
             </section>
 
             {/* Values */}
-            <section className="py-20 bg-slate-900">
+            <section className="py-20 bg-white">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-16">
                         <motion.h2
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
-                            className="text-3xl md:text-5xl font-bold font-heading text-white mb-4"
+                            className="text-3xl md:text-5xl font-bold font-heading text-gray-900 mb-4"
                         >
                             Our <span className="text-gradient">Values</span>
                         </motion.h2>
@@ -104,7 +104,7 @@ const About = () => {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: 0.2 }}
-                            className="text-gray-400 max-w-2xl mx-auto"
+                            className="text-gray-600 max-w-2xl mx-auto"
                         >
                             The principles that guide everything we do
                         </motion.p>
@@ -118,13 +118,13 @@ const About = () => {
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true }}
                                 transition={{ delay: index * 0.1 }}
-                                className="bg-slate-800 p-6 rounded-2xl border border-white/5 hover:border-primary-500/50 transition-all"
+                                className="bg-white p-6 rounded-2xl border border-gray-200 hover:border-red-500/50 transition-all shadow-sm hover:shadow-lg"
                             >
-                                <div className="w-12 h-12 bg-primary-500/20 rounded-lg flex items-center justify-center mb-4 text-primary-400">
+                                <div className="w-12 h-12 bg-red-50 rounded-lg flex items-center justify-center mb-4 text-red-600">
                                     <value.icon size={24} />
                                 </div>
-                                <h3 className="text-xl font-bold text-white mb-2">{value.title}</h3>
-                                <p className="text-gray-400 text-sm">{value.description}</p>
+                                <h3 className="text-xl font-bold text-gray-900 mb-2">{value.title}</h3>
+                                <p className="text-gray-600 text-sm">{value.description}</p>
                             </motion.div>
                         ))}
                     </div>
@@ -132,21 +132,21 @@ const About = () => {
             </section>
 
             {/* Timeline */}
-            <section className="py-20 bg-slate-800">
+            <section className="py-20 bg-gray-50">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-16">
                         <motion.h2
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
-                            className="text-3xl md:text-5xl font-bold font-heading text-white mb-4"
+                            className="text-3xl md:text-5xl font-bold font-heading text-gray-900 mb-4"
                         >
                             Our <span className="text-gradient">Journey</span>
                         </motion.h2>
                     </div>
 
                     <div className="relative">
-                        <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 h-full w-0.5 bg-primary-500/30" />
+                        <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 h-full w-0.5 bg-red-500/30" />
 
                         {milestones.map((milestone, index) => (
                             <motion.div
@@ -158,14 +158,14 @@ const About = () => {
                                 className={`flex items-center mb-12 ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'}`}
                             >
                                 <div className={`w-full md:w-5/12 ${index % 2 === 0 ? 'md:text-right md:pr-12' : 'md:pl-12'}`}>
-                                    <div className="bg-slate-900 p-6 rounded-2xl border border-white/10">
-                                        <span className="text-primary-400 font-bold text-2xl">{milestone.year}</span>
-                                        <h3 className="text-xl font-bold text-white mt-2 mb-2">{milestone.title}</h3>
-                                        <p className="text-gray-400 text-sm">{milestone.description}</p>
+                                    <div className="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm">
+                                        <span className="text-red-600 font-bold text-2xl">{milestone.year}</span>
+                                        <h3 className="text-xl font-bold text-gray-900 mt-2 mb-2">{milestone.title}</h3>
+                                        <p className="text-gray-600 text-sm">{milestone.description}</p>
                                     </div>
                                 </div>
                                 <div className="hidden md:flex w-2/12 justify-center">
-                                    <div className="w-4 h-4 bg-primary-500 rounded-full border-4 border-slate-800" />
+                                    <div className="w-4 h-4 bg-red-600 rounded-full border-4 border-gray-50" />
                                 </div>
                                 <div className="hidden md:block w-5/12" />
                             </motion.div>

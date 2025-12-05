@@ -27,7 +27,7 @@ const Navbar = () => {
 
     return (
         <nav
-            className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-slate-900/80 backdrop-blur-md border-b border-white/10' : 'bg-transparent'
+            className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-white/95 backdrop-blur-md border-b border-gray-200 shadow-sm' : 'bg-white/80 backdrop-blur-sm'
                 }`}
         >
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -45,8 +45,8 @@ const Navbar = () => {
                                     key={link.name}
                                     to={link.path}
                                     className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${isActive(link.path)
-                                        ? 'text-primary-400 bg-primary-500/10'
-                                        : 'text-gray-300 hover:text-white'
+                                            ? 'text-red-600 bg-red-50'
+                                            : 'text-gray-700 hover:text-red-600'
                                         }`}
                                 >
                                     {link.name}
@@ -54,7 +54,7 @@ const Navbar = () => {
                             ))}
                             <Link
                                 to="/contact"
-                                className="bg-primary-600 hover:bg-primary-700 text-white px-6 py-2 rounded-full text-sm font-medium transition-all transform hover:scale-105"
+                                className="bg-red-600 hover:bg-red-700 text-white px-6 py-2 rounded-full text-sm font-medium transition-all transform hover:scale-105 shadow-md hover:shadow-lg"
                             >
                                 Get Started
                             </Link>
@@ -64,7 +64,7 @@ const Navbar = () => {
                     <div className="md:hidden">
                         <button
                             onClick={() => setIsOpen(!isOpen)}
-                            className="text-gray-300 hover:text-white focus:outline-none"
+                            className="text-gray-700 hover:text-red-600 focus:outline-none"
                         >
                             {isOpen ? <X size={24} /> : <Menu size={24} />}
                         </button>
@@ -78,7 +78,7 @@ const Navbar = () => {
                         initial={{ opacity: 0, y: -20 }}
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: -20 }}
-                        className="md:hidden bg-slate-900 border-b border-white/10"
+                        className="md:hidden bg-white border-b border-gray-200"
                     >
                         <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
                             {navLinks.map((link) => (
@@ -87,8 +87,8 @@ const Navbar = () => {
                                     to={link.path}
                                     onClick={() => setIsOpen(false)}
                                     className={`block px-3 py-2 rounded-md text-base font-medium ${isActive(link.path)
-                                        ? 'text-primary-400 bg-primary-500/10'
-                                        : 'text-gray-300 hover:text-white'
+                                            ? 'text-red-600 bg-red-50'
+                                            : 'text-gray-700 hover:text-red-600 hover:bg-gray-50'
                                         }`}
                                 >
                                     {link.name}
@@ -97,7 +97,7 @@ const Navbar = () => {
                             <Link
                                 to="/contact"
                                 onClick={() => setIsOpen(false)}
-                                className="w-full text-left bg-primary-600 text-white block px-3 py-2 rounded-md text-base font-medium mt-4"
+                                className="w-full text-center bg-red-600 text-white block px-3 py-2 rounded-md text-base font-medium mt-4 hover:bg-red-700"
                             >
                                 Get Started
                             </Link>
